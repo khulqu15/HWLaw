@@ -1,0 +1,4 @@
+.service-content:hover .service-icon {
+    position: absolute;
+    top: -80px;
+}

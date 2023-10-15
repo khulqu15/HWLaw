@@ -1,0 +1,22 @@
+.service-content:hover .service-icon {
+    position: absolute;
+    top: -80px;
+    opacity: 0;
+}
+
+.service-button {
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.service-content:hover .service-button {
+    opacity: 1;
+}
+
+.service-cover {
+    transition: all .3s ease;
+}
+
+.service-content:hover .service-cover {
+    opacity: 1;
+}
