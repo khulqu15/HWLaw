@@ -62,11 +62,5 @@ function getId(url) {
       ? match[2]
       : null;
 }
-
-document.addEventListener('contextmenu', function(e) {
-    if (e.target.tagName === 'IMG') {
-        e.preventDefault();
-    }
-});
 </script>
 </html>

@@ -122,12 +122,6 @@ document.oncontextmenu = function() {
     return false;
 };
 
-document.addEventListener('contextmenu', function(e) {
-    if (e.target.tagName === 'IMG') {
-        e.preventDefault();
-    }
-});
-
 document.getElementById('logout_btn').addEventListener('click', function() {
     let is_check = confirm('Logout ?')
     if(is_check) {
