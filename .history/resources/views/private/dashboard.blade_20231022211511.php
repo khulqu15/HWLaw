@@ -1,3 +1,0 @@
-@extends('private')
-
-@section('')
