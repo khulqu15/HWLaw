@@ -226,7 +226,7 @@ document.getElementById('contact_form').addEventListener('submit', function(e) {
         'message': document.getElementById('message').value,
     }
 
-    fetch('/client/add', {
+    fetch('/client/add/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -15,7 +15,7 @@
                     <div id="contact_us" class="absolute -left-12 -top-12 inline-block px-8 py-4 bg-red-500 text-white">
                         <h5 class="text-xl font-bold">Hubungi Kami Sekarang</h5>
                     </div>
-                    <form id="contact_form" method="POST">
+                    <form id="contact_form">
                         <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                             <div class="grid grid-cols-2 gap-6">
                                 <div class="form-group">
@@ -226,7 +226,10 @@ document.getElementById('contact_form').addEventListener('submit', function(e) {
         'message': document.getElementById('message').value,
     }
 
-    fetch('/client/add', {
+    sendToWhatsApp(form, whatsappLink)
+
+
+    fetch('/client/add/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
